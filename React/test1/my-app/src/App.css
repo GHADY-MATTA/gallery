@@ -1,0 +1,276 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.img-fetch {
+  max-width: 100%;
+  /* Ensures the image does not exceed its container's width */
+  max-height: 300px;
+  /* Prevents the image from becoming too tall */
+  width: auto;
+  /* Maintains the aspect ratio */
+  height: auto;
+  /* Maintains the aspect ratio */
+  object-fit: contain;
+  /* Ensures the entire image is visible, scaling without distortion */
+  margin: 10px;
+  /* Adds spacing between images */
+  display: block;
+  /* Prevents images from aligning horizontally */
+  border-radius: 8px;
+  /* Optional: Adds rounded corners for a better look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Optional: Adds a subtle shadow for depth */
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* ------------------------ my styles test ---------------------- *//* ------------------------ my styles test ---------------------- */
+/* Elegant Container Box */
+.container {
+  background: #1A1A1A;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.2);
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+  max-width: 500px;
+  /* Responsive width */
+  width: 90%;
+  /* margin-top: 2rem; */
+  /* /* Ensures space at the */
+  
+}
+
+.container:hover {
+  border-color: #D4AC0D;
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+}
+
+/* Box Styling */
+.box {
+  background: #1E1E1E;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  transition: box-shadow 0.3s ease-in-out, transform 0.2s;
+}
+
+.box:hover {
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Labels */
+.label-tag {
+  font-size: 14px;
+  color: #ccc;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Inputs & Text Areas */
+.input-btn,
+.text-area {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #444;
+  border-radius: 6px;
+  background: #222;
+  color: #fff;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  min-width: 280px;
+}
+
+.input-btn:focus,
+.text-area:focus {
+  border-color: #D4AC0D;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+}
+
+/* Links (a tags) */
+.a-tag {
+  color: #bbb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.a-tag:hover {
+  color: #D4AC0D;
+  border-bottom: 2px solid #D4AC0D;
+}
+
+/* Buttons */
+.btn-btn {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s, border-color 0.3s;
+}
+
+/* Back Button */
+.back-btn {
+  border: 1px solid #D4AC0D !important;
+  border-radius: 1rem 2rem !important;
+  padding: 1rem 2rem !important;
+  text-align: center !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  background-color: #222 !important;
+  color: #D4AC0D !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  width: 100% !important;
+  display: inline-block !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+}
+
+.back-btn:hover {
+  background-color: #444 !important;
+  border-color: #D4AC0D !important;
+  transform: scale(1.05) !important;
+  border-radius: 2rem 1rem !important;
+}
+
+/* Login & Sign Up Buttons */
+.login-btn,
+.signUp-btn {
+  border: 1px solid #D4AC0D;
+  border-radius: 2rem 1rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.login-btn {
+  background-color: #D4AC0D;
+  color: #121212;
+}
+
+.login-btn:hover {
+  background-color: #b68d40;
+  border-color: #D4AC0D;
+  transform: scale(1.05);
+  border-radius: 1rem 2rem;
+}
+
+.signUp-btn {
+  background-color: transparent;
+  color: #D4AC0D;
+}
+
+.signUp-btn:hover {
+  background-color: #222;
+  border-color: #D4AC0D;
+  transform: scale(1.05);
+  border-radius: 1rem 2rem;
+}
+
+/* Text Styles */
+.p-tag {
+  font-size: 16px;
+  color: #ddd;
+  line-height: 1.6;
+  text-align: justify;
+  transition: color 0.3s;
+}
+
+.p-tag:hover {
+  color: #f5f5f5;
+}
+
+.h-tag {
+  font-size: 28px;
+  font-weight: bold;
+  color: #D4AC0D;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  transition: color 0.3s;
+}
+
+.h-tag:hover {
+  color: #f5f5f5;
+}
+
+/* Font Sizes */
+.big-text {
+  font-size: 36px;
+  font-weight: bold;
+  color: #D4AC0D;
+}
+
+.medium-text {
+  font-size: 22px;
+  color: #ddd;
+}
+
+.small-text {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.logout-btn {
+  border: 1px solid #D4AC0D;
+  border-radius: 2rem 1rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  background-color: transparent;
+  color: #D4AC0D;
+  width: 100%;
+}
+
+.logout-btn:hover {
+  background-color: #222;
+  border-color: #D4AC0D;
+  transform: scale(1.05);
+  border-radius: 1rem 2rem;
+}/* ------------------------ my styles test ---------------------- */
+/* ------------------------ my styles test ---------------------- *//* ------------------------ my styles test ---------------------- */
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
