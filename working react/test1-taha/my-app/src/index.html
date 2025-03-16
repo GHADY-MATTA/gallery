@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Employee Onboarding Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 0 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>New Employee Onboarding Form</h1>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="dob">Date of Birth *</label>
+            <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <!-- Job Details Section -->
+        <fieldset>
+            <legend>Job Details</legend>
+            <label for="position">Position Applied For *</label>
+            <input type="text" id="position" name="position" required>
+
+            <label for="startDate">Preferred Start Date *</label>
+            <input type="date" id="startDate" name="startDate" required>
+        </fieldset>
+
+        <!-- Documents Section -->
+        <fieldset>
+            <legend>Documents</legend>
+            <label for="resume">Upload Resume/CV *</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+            <label for="coverLetter">Cover Letter</label>
+            <textarea id="coverLetter" name="coverLetter" rows="5" placeholder="Optional cover letter..."></textarea>
+        </fieldset>
+
+        <!-- Medical and Passport Upload Section -->
+        <fieldset>
+            <legend>Medical and Passport Submission</legend>
+            <label for="medicalReport">Upload Medical Report (PDF) *</label>
+            <input type="file" id="medicalReport" name="medicalReport" accept=".pdf" required>
+
+            <label for="passport">Upload Passport Copy (PDF) *</label>
+            <input type="file" id="passport" name="passport" accept=".pdf" required>
+        </fieldset>
+
+        <!-- Emergency Contact Section -->
+        <fieldset>
+            <legend>Emergency Contact</legend>
+            <label for="emergencyName">Contact Name *</label>
+            <input type="text" id="emergencyName" name="emergencyName" required>
+
+            <label for="emergencyPhone">Phone Number *</label>
+            <input type="tel" id="emergencyPhone" name="emergencyPhone" required>
+        </fieldset>
+
+        <button type="submit">Submit Application</button>
+        <button type="submit" formaction="/submit-medical-passport">Submit Medical & Passport</button>
+    </form>
+</body>
+
+</html>
