@@ -1,5 +1,7 @@
 adde the pages file to ypur htdocs react folder in my-app
 uploadphoto and the storephoto.php / fetchphotos.php directly inside htdocs 
+
+
 CREATE DATABASE gallerystore;
 
 USE gallerystore;
@@ -10,9 +12,16 @@ CREATE TABLE photos (
     lastname VARCHAR(100) NOT NULL,
     photo LONGTEXT NOT NULL
 );
+
+
+
  past this inside your xamp sql 
 populate database 
+
+
 USE gallerystore; // if needed
+
+
 
 INSERT INTO photos (id, username, lastname, photo) 
 VALUES
