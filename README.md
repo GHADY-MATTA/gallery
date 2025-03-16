@@ -1,4 +1,4 @@
-adde the pages file to ypur htdocs react folder in my-app
+Add the pages file to ypur htdocs react folder in my-app
 uploadphoto and the storephoto.php / fetchphotos.php directly inside htdocs 
 
 
