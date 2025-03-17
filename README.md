@@ -1,7 +1,7 @@
 Add the pages file to ypur htdocs react folder in my-app
 uploadphoto and the storephoto.php / fetchphotos.php directly inside htdocs 
 
-
+ (sory for this one i was learning react a lot )
 CREATE DATABASE gallerystore;
 
 USE gallerystore;
